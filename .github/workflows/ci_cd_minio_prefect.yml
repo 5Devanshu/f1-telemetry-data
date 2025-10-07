@@ -1,0 +1,92 @@
+name: CI/CD with Minio and Prefect
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    services:
+      minio:
+        image: minio/minio
+        ports:
+          - "9000:9000"
+          - "9001:9001"
+        env:
+          MINIO_ROOT_USER: minioadmin
+          MINIO_ROOT_PASSWORD: minioadmin
+        options: >-
+          --health-cmd "curl http://localhost:9000/minio/health/live"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 5
+          --entrypoint "/usr/bin/docker-entrypoint.sh"
+          minio server /data --console-address ":9001"
+      prefect:
+        image: prefecthq/prefect:2-python3.10
+        ports:
+          - "4200:4200"
+        env:
+          PREFECT_API_URL: http://localhost:4200/api
+          PREFECT_UI_URL: http://localhost:4200
+        options: >-
+          --health-cmd "curl http://localhost:4200/api/health"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 5
+          --entrypoint "/usr/bin/prefect"
+          prefect server start
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Wait for Minio to be ready
+        run: |
+          docker ps
+          echo "Waiting for Minio to be ready..."
+          for i in $(seq 1 10); do
+            if curl -s http://localhost:9000/minio/health/live; then
+              echo "Minio is ready!"
+              break
+            fi
+            echo "Minio not ready yet, waiting 5 seconds..."
+            sleep 5
+          done
+          curl -s http://localhost:9000/minio/health/live || (echo "Minio failed to start" && exit 1)
+
+      - name: Wait for Prefect server to be ready
+        run: |
+          echo "Waiting for Prefect server to be ready..."
+          for i in $(seq 1 10); do
+            if curl -s http://localhost:4200/api/health; then
+              echo "Prefect server is ready!"
+              break
+            fi
+            echo "Prefect server not ready yet, waiting 5 seconds..."
+            sleep 5
+          done
+          curl -s http://localhost:4200/api/health || (echo "Prefect server failed to start" && exit 1)
+
+      - name: Configure Minio client
+        run: |
+          pip install minio
+          python -c "from minio import Minio; client = Minio('localhost:9000', access_key='minioadmin', secret_key='minioadmin', secure=False); client.make_bucket('f1-telemetry')"
+
+      - name: Run Prefect flow
+        run: |
+          prefect deploy --name f1-telemetry-ingestion-deployment --pool dev --entrypoint src/prefect_flow.py:f1_telemetry_ingestion_flow
+          prefect flow run f1-telemetry-ingestion-flow --name f1-telemetry-ingestion-deployment

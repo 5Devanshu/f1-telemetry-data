@@ -1,0 +1,29 @@
+# prefect.yaml
+# An example of a Prefect deployment configuration.
+
+# The name of the deployment
+name: f1-telemetry-ingestion-deployment
+
+# The name of the flow to deploy
+flow_name: f1-telemetry-ingestion-flow
+
+# The entrypoint for the flow, in the format "path/to/file.py:flow_function_name"
+entrypoint: src/prefect_flow.py:f1_telemetry_ingestion_flow
+
+# The work pool to deploy to
+work_pool:
+  name: dev
+  # The work pool type must match the type of the worker that will pick up the flow runs
+  # For local execution, this is typically 'process'
+  type: process
+
+# The schedule for the flow
+schedule:
+  # A cron string for running every minute
+  cron: "* * * * *"
+
+# The storage for the flow code. For local execution, this is typically 'local-file-system'
+storage:
+  type: local-file-system
+  # The base path for the flow code. This should be the root of your project.
+  basepath: .

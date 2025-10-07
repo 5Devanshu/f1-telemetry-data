@@ -1,0 +1,472 @@
+[0m11:32:11.492903 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1062f66e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10772d870>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10772dcc0>]}
+
+
+============================== 11:32:11.494761 | 2f28e859-163e-451f-a550-1b3bc5a684ce ==============================
+[0m11:32:11.494761 [info ] [MainThread]: Running with dbt=1.10.13
+[0m11:32:11.495051 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/Users/devanshu/Desktop/f1-telemetry-project/dbt_project', 'debug': 'False', 'empty': 'False', 'indirect_selection': 'eager', 'partial_parse': 'True', 'cache_selected_only': 'False', 'invocation_command': 'dbt run', 'log_path': 'logs', 'warn_error': 'None', 'target_path': 'None', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'static_parser': 'True', 'printer_width': '80', 'version_check': 'True', 'log_cache_events': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'write_json': 'True', 'introspect': 'True', 'no_print': 'None'}
+[0m11:32:11.495391 [error] [MainThread]: Encountered an error:
+Runtime Error
+  dbt_project.yml does not parse to a dictionary
+[0m11:32:11.496355 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.037497792, "process_in_blocks": "0", "process_kernel_time": 0.067566, "process_mem_max_rss": "101597184", "process_out_blocks": "0", "process_user_time": 0.549083}
+[0m11:32:11.496569 [debug] [MainThread]: Command `dbt run` failed at 11:32:11.496529 after 0.04 seconds
+[0m11:32:11.496730 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1062f66e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10772d870>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10772e0b0>]}
+[0m11:32:11.496892 [debug] [MainThread]: Flushing usage events
+[0m11:32:12.800656 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:32:22.752073 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103c126e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d69840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d69cc0>]}
+
+
+============================== 11:32:22.753610 | 9cba30de-1c14-4e6c-a556-54914d559d6b ==============================
+[0m11:32:22.753610 [info ] [MainThread]: Running with dbt=1.10.13
+[0m11:32:22.753920 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'log_path': '/Users/devanshu/Desktop/f1-telemetry-project/dbt_project/logs', 'no_print': 'None', 'use_experimental_parser': 'False', 'version_check': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'quiet': 'False', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'warn_error': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'profiles_dir': '/Users/devanshu/Desktop/f1-telemetry-project/dbt_project', 'debug': 'False', 'use_colors': 'True', 'invocation_command': 'dbt run'}
+[0m11:32:22.755644 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.duckdb'
+[0m11:32:22.755920 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "f1_telemetry", target "dev" invalid: Runtime Error
+    Could not find adapter type duckdb!
+[0m11:32:22.757079 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.03664904, "process_in_blocks": "0", "process_kernel_time": 0.051338, "process_mem_max_rss": "102285312", "process_out_blocks": "0", "process_user_time": 0.561399}
+[0m11:32:22.757306 [debug] [MainThread]: Command `dbt run` failed at 11:32:22.757266 after 0.04 seconds
+[0m11:32:22.757464 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103c126e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d69f00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d68700>]}
+[0m11:32:22.757637 [debug] [MainThread]: Flushing usage events
+[0m11:32:23.836546 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:33:02.881309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110892620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11232d750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11232dbd0>]}
+
+
+============================== 11:33:02.883652 | 103166bc-06cc-4f73-9a91-4a0738dc4f80 ==============================
+[0m11:33:02.883652 [info ] [MainThread]: Running with dbt=1.10.13
+[0m11:33:02.883947 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'partial_parse': 'True', 'log_cache_events': 'False', 'introspect': 'True', 'fail_fast': 'False', 'indirect_selection': 'eager', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'empty': 'False', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'target_path': 'None', 'log_path': '/Users/devanshu/Desktop/f1-telemetry-project/dbt_project/logs', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'profiles_dir': '/Users/devanshu/Desktop/f1-telemetry-project/dbt_project', 'warn_error': 'None', 'no_print': 'None', 'quiet': 'False', 'write_json': 'True', 'debug': 'False', 'static_parser': 'True'}
+[0m11:33:03.569218 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '103166bc-06cc-4f73-9a91-4a0738dc4f80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11232e740>]}
+[0m11:33:03.597367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '103166bc-06cc-4f73-9a91-4a0738dc4f80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11142f8e0>]}
+[0m11:33:03.598508 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m11:33:03.650716 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m11:33:03.651112 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m11:33:03.651319 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '103166bc-06cc-4f73-9a91-4a0738dc4f80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114ca24a0>]}
+[0m11:33:04.105970 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.f1_telemetry.telemetry_model' (models/telemetry_model.sql) depends on a source named 'f1.laps' which was not found
+[0m11:33:04.107143 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 1.2606344, "process_in_blocks": "0", "process_kernel_time": 0.119274, "process_mem_max_rss": "131219456", "process_out_blocks": "0", "process_user_time": 1.165017}
+[0m11:33:04.107439 [debug] [MainThread]: Command `dbt run` failed at 11:33:04.107371 after 1.26 seconds
+[0m11:33:04.107798 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110892620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1160e01c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1160e14b0>]}
+[0m11:33:04.108052 [debug] [MainThread]: Flushing usage events
+[0m11:33:05.239898 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:36:01.971202 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a36740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b8d8a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b8dd20>]}
+
+
+============================== 11:36:01.973792 | 188317f1-3407-4853-a01c-af06bc9f519d ==============================
+[0m11:36:01.973792 [info ] [MainThread]: Running with dbt=1.10.13
+[0m11:36:01.974118 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'indirect_selection': 'eager', 'printer_width': '80', 'no_print': 'None', 'empty': 'False', 'use_colors': 'True', 'invocation_command': 'dbt run', 'log_path': '/Users/devanshu/Desktop/f1-telemetry-project/dbt_project/logs', 'log_format': 'default', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'profiles_dir': '/Users/devanshu/Desktop/f1-telemetry-project/dbt_project', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'warn_error': 'None', 'debug': 'False', 'target_path': 'None', 'fail_fast': 'False', 'write_json': 'True', 'quiet': 'False', 'static_parser': 'True', 'version_check': 'True'}
+[0m11:36:02.181825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '188317f1-3407-4853-a01c-af06bc9f519d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c9a470>]}
+[0m11:36:02.215336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '188317f1-3407-4853-a01c-af06bc9f519d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c9b820>]}
+[0m11:36:02.216570 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m11:36:02.273605 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m11:36:02.274486 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m11:36:02.274794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '188317f1-3407-4853-a01c-af06bc9f519d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e00b50>]}
+[0m11:36:02.849672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '188317f1-3407-4853-a01c-af06bc9f519d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107450370>]}
+[0m11:36:02.886261 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/devanshu/Desktop/f1-telemetry-project/dbt_project/target/manifest.json
+[0m11:36:02.887323 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/devanshu/Desktop/f1-telemetry-project/dbt_project/target/semantic_manifest.json
+[0m11:36:02.897677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '188317f1-3407-4853-a01c-af06bc9f519d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107428d30>]}
+[0m11:36:02.897918 [info ] [MainThread]: Found 1 model, 1 source, 444 macros
+[0m11:36:02.898109 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '188317f1-3407-4853-a01c-af06bc9f519d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1073e7b80>]}
+[0m11:36:02.898803 [info ] [MainThread]: 
+[0m11:36:02.898994 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:36:02.899153 [info ] [MainThread]: 
+[0m11:36:02.899398 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m11:36:02.899788 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_f1_telemetry'
+[0m11:36:02.921156 [debug] [ThreadPool]: Using duckdb connection "list_f1_telemetry"
+[0m11:36:02.921396 [debug] [ThreadPool]: On list_f1_telemetry: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "f1_telemetry", "target_name": "dev", "connection_name": "list_f1_telemetry"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"f1_telemetry"'
+    
+  
+  
+[0m11:36:02.921558 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:36:02.926592 [debug] [ThreadPool]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "f1_telemetry", "target_name": "dev", "connection_name": "list_f1_telemetry"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"f1_telemetry"'
+    
+  
+  
+[0m11:36:02.926818 [debug] [ThreadPool]: DuckDB adapter: Rolling back transaction.
+[0m11:36:02.927192 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:36:02.927361 [debug] [MainThread]: Connection 'list_f1_telemetry' was properly closed.
+[0m11:36:02.927507 [info ] [MainThread]: 
+[0m11:36:02.927685 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.03 seconds (0.03s).
+[0m11:36:02.927932 [error] [MainThread]: Encountered an error:
+Runtime Error
+  IO Error: Cannot open file "/Users/devanshu/Desktop/f1-telemetry-project/dbt_project/dbt_project/f1_telemetry.duckdb": No such file or directory
+[0m11:36:02.928888 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.99505335, "process_in_blocks": "0", "process_kernel_time": 0.140149, "process_mem_max_rss": "144883712", "process_out_blocks": "0", "process_user_time": 1.389909}
+[0m11:36:02.929094 [debug] [MainThread]: Command `dbt run` failed at 11:36:02.929059 after 1.00 seconds
+[0m11:36:02.929266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a36740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107428430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1074ba140>]}
+[0m11:36:02.929450 [debug] [MainThread]: Flushing usage events
+[0m11:36:04.056793 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:37:04.784489 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b3a6e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c91840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c91cc0>]}
+
+
+============================== 11:37:04.786427 | 0c969055-4978-481e-9850-c9b91a058b72 ==============================
+[0m11:37:04.786427 [info ] [MainThread]: Running with dbt=1.10.13
+[0m11:37:04.786737 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'profiles_dir': '/Users/devanshu/Desktop/f1-telemetry-project/dbt_project', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'debug': 'False', 'write_json': 'True', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'use_colors': 'True', 'empty': 'False', 'printer_width': '80', 'invocation_command': 'dbt run', 'warn_error': 'None', 'no_print': 'None', 'log_cache_events': 'False', 'partial_parse': 'True', 'version_check': 'True', 'target_path': 'None', 'log_path': '/Users/devanshu/Desktop/f1-telemetry-project/dbt_project/logs', 'quiet': 'False'}
+[0m11:37:04.930999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0c969055-4978-481e-9850-c9b91a058b72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c92770>]}
+[0m11:37:04.959238 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0c969055-4978-481e-9850-c9b91a058b72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1085d2aa0>]}
+[0m11:37:04.960536 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m11:37:05.021241 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m11:37:05.067636 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m11:37:05.067978 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0c969055-4978-481e-9850-c9b91a058b72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10856cd90>]}
+[0m11:37:05.613806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0c969055-4978-481e-9850-c9b91a058b72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109540130>]}
+[0m11:37:05.650063 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/devanshu/Desktop/f1-telemetry-project/dbt_project/target/manifest.json
+[0m11:37:05.651079 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/devanshu/Desktop/f1-telemetry-project/dbt_project/target/semantic_manifest.json
+[0m11:37:05.660428 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0c969055-4978-481e-9850-c9b91a058b72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10951d420>]}
+[0m11:37:05.660659 [info ] [MainThread]: Found 1 model, 1 source, 444 macros
+[0m11:37:05.660839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0c969055-4978-481e-9850-c9b91a058b72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094d3640>]}
+[0m11:37:05.661542 [info ] [MainThread]: 
+[0m11:37:05.661732 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:37:05.661889 [info ] [MainThread]: 
+[0m11:37:05.662134 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m11:37:05.662521 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_f1_telemetry'
+[0m11:37:05.708604 [debug] [ThreadPool]: Using duckdb connection "list_f1_telemetry"
+[0m11:37:05.708849 [debug] [ThreadPool]: On list_f1_telemetry: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "f1_telemetry", "target_name": "dev", "connection_name": "list_f1_telemetry"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"f1_telemetry"'
+    
+  
+  
+[0m11:37:05.709003 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:37:05.717989 [debug] [ThreadPool]: SQL status: OK in 0.009 seconds
+[0m11:37:05.718581 [debug] [ThreadPool]: On list_f1_telemetry: Close
+[0m11:37:05.718914 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_f1_telemetry, now create_f1_telemetry_main)
+[0m11:37:05.719147 [debug] [ThreadPool]: Creating schema "database: "f1_telemetry"
+schema: "main"
+"
+[0m11:37:05.722348 [debug] [ThreadPool]: Using duckdb connection "create_f1_telemetry_main"
+[0m11:37:05.722560 [debug] [ThreadPool]: On create_f1_telemetry_main: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "f1_telemetry", "target_name": "dev", "connection_name": "create_f1_telemetry_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='f1_telemetry'
+        and type='sqlite'
+    
+  
+[0m11:37:05.722718 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:37:05.723444 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m11:37:05.724044 [debug] [ThreadPool]: Using duckdb connection "create_f1_telemetry_main"
+[0m11:37:05.724205 [debug] [ThreadPool]: On create_f1_telemetry_main: BEGIN
+[0m11:37:05.724434 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m11:37:05.724591 [debug] [ThreadPool]: Using duckdb connection "create_f1_telemetry_main"
+[0m11:37:05.724747 [debug] [ThreadPool]: On create_f1_telemetry_main: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "f1_telemetry", "target_name": "dev", "connection_name": "create_f1_telemetry_main"} */
+
+    
+    
+        create schema if not exists "f1_telemetry"."main"
+    
+[0m11:37:05.724987 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m11:37:05.725345 [debug] [ThreadPool]: On create_f1_telemetry_main: COMMIT
+[0m11:37:05.725496 [debug] [ThreadPool]: Using duckdb connection "create_f1_telemetry_main"
+[0m11:37:05.725633 [debug] [ThreadPool]: On create_f1_telemetry_main: COMMIT
+[0m11:37:05.725831 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m11:37:05.725991 [debug] [ThreadPool]: On create_f1_telemetry_main: Close
+[0m11:37:05.726451 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_f1_telemetry_main, now list_f1_telemetry_main)
+[0m11:37:05.728824 [debug] [ThreadPool]: Using duckdb connection "list_f1_telemetry_main"
+[0m11:37:05.728980 [debug] [ThreadPool]: On list_f1_telemetry_main: BEGIN
+[0m11:37:05.729113 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:37:05.729356 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m11:37:05.729510 [debug] [ThreadPool]: Using duckdb connection "list_f1_telemetry_main"
+[0m11:37:05.729670 [debug] [ThreadPool]: On list_f1_telemetry_main: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "f1_telemetry", "target_name": "dev", "connection_name": "list_f1_telemetry_main"} */
+select
+      'f1_telemetry' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'f1_telemetry'
+  
+[0m11:37:05.735837 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m11:37:05.736449 [debug] [ThreadPool]: On list_f1_telemetry_main: ROLLBACK
+[0m11:37:05.737056 [debug] [ThreadPool]: Failed to rollback 'list_f1_telemetry_main'
+[0m11:37:05.737210 [debug] [ThreadPool]: On list_f1_telemetry_main: Close
+[0m11:37:05.737537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0c969055-4978-481e-9850-c9b91a058b72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10951ead0>]}
+[0m11:37:05.737765 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:37:05.737911 [debug] [MainThread]: On master: BEGIN
+[0m11:37:05.738044 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:37:05.738277 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m11:37:05.738432 [debug] [MainThread]: On master: COMMIT
+[0m11:37:05.738581 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:37:05.738742 [debug] [MainThread]: On master: COMMIT
+[0m11:37:05.738975 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m11:37:05.739138 [debug] [MainThread]: On master: Close
+[0m11:37:05.740400 [debug] [Thread-1 (]: Began running node model.f1_telemetry.telemetry_model
+[0m11:37:05.740662 [info ] [Thread-1 (]: 1 of 1 START sql view model main.telemetry_model ............................... [RUN]
+[0m11:37:05.740887 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_f1_telemetry_main, now model.f1_telemetry.telemetry_model)
+[0m11:37:05.741072 [debug] [Thread-1 (]: Began compiling node model.f1_telemetry.telemetry_model
+[0m11:37:05.744545 [debug] [Thread-1 (]: Writing injected SQL for node "model.f1_telemetry.telemetry_model"
+[0m11:37:05.744986 [debug] [Thread-1 (]: Began executing node model.f1_telemetry.telemetry_model
+[0m11:37:05.760979 [debug] [Thread-1 (]: Writing runtime sql for node "model.f1_telemetry.telemetry_model"
+[0m11:37:05.761595 [debug] [Thread-1 (]: Using duckdb connection "model.f1_telemetry.telemetry_model"
+[0m11:37:05.761774 [debug] [Thread-1 (]: On model.f1_telemetry.telemetry_model: BEGIN
+[0m11:37:05.761962 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:37:05.762320 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:37:05.762484 [debug] [Thread-1 (]: Using duckdb connection "model.f1_telemetry.telemetry_model"
+[0m11:37:05.762652 [debug] [Thread-1 (]: On model.f1_telemetry.telemetry_model: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "f1_telemetry", "target_name": "dev", "node_id": "model.f1_telemetry.telemetry_model"} */
+
+  
+  create view "f1_telemetry"."main"."telemetry_model__dbt_tmp" as (
+    SELECT
+  driver_number,
+  AVG(sector1_time + sector2_time + sector3_time) AS avg_lap_time
+FROM "f1_telemetry"."main"."laps"
+GROUP BY driver_number
+ORDER BY avg_lap_time ASC
+  );
+
+[0m11:37:05.765876 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "f1_telemetry", "target_name": "dev", "node_id": "model.f1_telemetry.telemetry_model"} */
+
+  
+  create view "f1_telemetry"."main"."telemetry_model__dbt_tmp" as (
+    SELECT
+  driver_number,
+  AVG(sector1_time + sector2_time + sector3_time) AS avg_lap_time
+FROM "f1_telemetry"."main"."laps"
+GROUP BY driver_number
+ORDER BY avg_lap_time ASC
+  );
+
+[0m11:37:05.766064 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m11:37:05.766289 [debug] [Thread-1 (]: On model.f1_telemetry.telemetry_model: ROLLBACK
+[0m11:37:05.771234 [debug] [Thread-1 (]: Failed to rollback 'model.f1_telemetry.telemetry_model'
+[0m11:37:05.771421 [debug] [Thread-1 (]: On model.f1_telemetry.telemetry_model: Close
+[0m11:37:05.771829 [debug] [Thread-1 (]: Runtime Error in model telemetry_model (models/telemetry_model.sql)
+  Binder Error: Referenced column "sector1_time" not found in FROM clause!
+  Candidate bindings: "session_key", "st_speed", "date_start", "segments_sector_1", "segments_sector_2"
+  
+  LINE 7:   AVG(sector1_time + sector2_time + sector3_time) AS avg_lap_time
+                ^
+[0m11:37:05.772887 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0c969055-4978-481e-9850-c9b91a058b72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075a2dd0>]}
+[0m11:37:05.773318 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model main.telemetry_model ...................... [[31mERROR[0m in 0.03s]
+[0m11:37:05.773654 [debug] [Thread-1 (]: Finished running node model.f1_telemetry.telemetry_model
+[0m11:37:05.773920 [debug] [Thread-4 (]: Marking all children of 'model.f1_telemetry.telemetry_model' to be skipped because of status 'error'.  Reason: Runtime Error in model telemetry_model (models/telemetry_model.sql)
+  Binder Error: Referenced column "sector1_time" not found in FROM clause!
+  Candidate bindings: "session_key", "st_speed", "date_start", "segments_sector_1", "segments_sector_2"
+  
+  LINE 7:   AVG(sector1_time + sector2_time + sector3_time) AS avg_lap_time
+                ^.
+[0m11:37:05.774578 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:37:05.774753 [debug] [MainThread]: On master: BEGIN
+[0m11:37:05.774891 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:37:05.775158 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m11:37:05.775316 [debug] [MainThread]: On master: COMMIT
+[0m11:37:05.775464 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:37:05.775596 [debug] [MainThread]: On master: COMMIT
+[0m11:37:05.775806 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m11:37:05.775960 [debug] [MainThread]: On master: Close
+[0m11:37:05.776158 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:37:05.776289 [debug] [MainThread]: Connection 'model.f1_telemetry.telemetry_model' was properly closed.
+[0m11:37:05.776430 [info ] [MainThread]: 
+[0m11:37:05.776593 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.11 seconds (0.11s).
+[0m11:37:05.776909 [debug] [MainThread]: Command end result
+[0m11:37:05.789072 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/devanshu/Desktop/f1-telemetry-project/dbt_project/target/manifest.json
+[0m11:37:05.790063 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/devanshu/Desktop/f1-telemetry-project/dbt_project/target/semantic_manifest.json
+[0m11:37:05.793017 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/devanshu/Desktop/f1-telemetry-project/dbt_project/target/run_results.json
+[0m11:37:05.793177 [info ] [MainThread]: 
+[0m11:37:05.793383 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m11:37:05.793558 [info ] [MainThread]: 
+[0m11:37:05.793765 [error] [MainThread]: [31mFailure in model telemetry_model (models/telemetry_model.sql)[0m
+[0m11:37:05.793963 [error] [MainThread]:   Runtime Error in model telemetry_model (models/telemetry_model.sql)
+  Binder Error: Referenced column "sector1_time" not found in FROM clause!
+  Candidate bindings: "session_key", "st_speed", "date_start", "segments_sector_1", "segments_sector_2"
+  
+  LINE 7:   AVG(sector1_time + sector2_time + sector3_time) AS avg_lap_time
+                ^
+[0m11:37:05.794125 [info ] [MainThread]: 
+[0m11:37:05.794304 [info ] [MainThread]:   compiled code at target/compiled/f1_telemetry/models/telemetry_model.sql
+[0m11:37:05.794460 [info ] [MainThread]: 
+[0m11:37:05.794632 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m11:37:05.795698 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 1.0443786, "process_in_blocks": "0", "process_kernel_time": 0.144227, "process_mem_max_rss": "148193280", "process_out_blocks": "0", "process_user_time": 1.474345}
+[0m11:37:05.795915 [debug] [MainThread]: Command `dbt run` failed at 11:37:05.795881 after 1.04 seconds
+[0m11:37:05.796107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b3a6e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e3b2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092c1d50>]}
+[0m11:37:05.796307 [debug] [MainThread]: Flushing usage events
+[0m11:37:06.961044 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:38:04.932606 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104426710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105581840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105581cc0>]}
+
+
+============================== 11:38:04.935324 | 8f5a9952-d527-4073-9a5d-9e314b6e6b81 ==============================
+[0m11:38:04.935324 [info ] [MainThread]: Running with dbt=1.10.13
+[0m11:38:04.935602 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'invocation_command': 'dbt run', 'warn_error': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'introspect': 'True', 'version_check': 'True', 'target_path': 'None', 'printer_width': '80', 'log_path': '/Users/devanshu/Desktop/f1-telemetry-project/dbt_project/logs', 'quiet': 'False', 'no_print': 'None', 'empty': 'False', 'partial_parse': 'True', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': '/Users/devanshu/Desktop/f1-telemetry-project/dbt_project', 'fail_fast': 'False', 'write_json': 'True', 'static_parser': 'True', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m11:38:05.083886 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8f5a9952-d527-4073-9a5d-9e314b6e6b81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105582770>]}
+[0m11:38:05.113507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8f5a9952-d527-4073-9a5d-9e314b6e6b81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e5abf0>]}
+[0m11:38:05.114896 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m11:38:05.175780 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m11:38:05.238407 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m11:38:05.238796 [debug] [MainThread]: Partial parsing: updated file: f1_telemetry://models/telemetry_model.sql
+[0m11:38:05.380826 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8f5a9952-d527-4073-9a5d-9e314b6e6b81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10581b970>]}
+[0m11:38:05.419518 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/devanshu/Desktop/f1-telemetry-project/dbt_project/target/manifest.json
+[0m11:38:05.420643 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/devanshu/Desktop/f1-telemetry-project/dbt_project/target/semantic_manifest.json
+[0m11:38:05.430530 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8f5a9952-d527-4073-9a5d-9e314b6e6b81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b0e5f0>]}
+[0m11:38:05.430796 [info ] [MainThread]: Found 1 model, 1 source, 444 macros
+[0m11:38:05.430988 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8f5a9952-d527-4073-9a5d-9e314b6e6b81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056687c0>]}
+[0m11:38:05.431727 [info ] [MainThread]: 
+[0m11:38:05.431916 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:38:05.432070 [info ] [MainThread]: 
+[0m11:38:05.432312 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m11:38:05.432697 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_f1_telemetry'
+[0m11:38:05.467065 [debug] [ThreadPool]: Using duckdb connection "list_f1_telemetry"
+[0m11:38:05.467357 [debug] [ThreadPool]: On list_f1_telemetry: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "f1_telemetry", "target_name": "dev", "connection_name": "list_f1_telemetry"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"f1_telemetry"'
+    
+  
+  
+[0m11:38:05.467531 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:38:05.476845 [debug] [ThreadPool]: SQL status: OK in 0.009 seconds
+[0m11:38:05.477489 [debug] [ThreadPool]: On list_f1_telemetry: Close
+[0m11:38:05.477801 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_f1_telemetry, now create_f1_telemetry_main)
+[0m11:38:05.478026 [debug] [ThreadPool]: Creating schema "database: "f1_telemetry"
+schema: "main"
+"
+[0m11:38:05.481131 [debug] [ThreadPool]: Using duckdb connection "create_f1_telemetry_main"
+[0m11:38:05.481335 [debug] [ThreadPool]: On create_f1_telemetry_main: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "f1_telemetry", "target_name": "dev", "connection_name": "create_f1_telemetry_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='f1_telemetry'
+        and type='sqlite'
+    
+  
+[0m11:38:05.481487 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:38:05.482078 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m11:38:05.482664 [debug] [ThreadPool]: Using duckdb connection "create_f1_telemetry_main"
+[0m11:38:05.482824 [debug] [ThreadPool]: On create_f1_telemetry_main: BEGIN
+[0m11:38:05.483038 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m11:38:05.483192 [debug] [ThreadPool]: Using duckdb connection "create_f1_telemetry_main"
+[0m11:38:05.483342 [debug] [ThreadPool]: On create_f1_telemetry_main: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "f1_telemetry", "target_name": "dev", "connection_name": "create_f1_telemetry_main"} */
+
+    
+    
+        create schema if not exists "f1_telemetry"."main"
+    
+[0m11:38:05.483574 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m11:38:05.483935 [debug] [ThreadPool]: On create_f1_telemetry_main: COMMIT
+[0m11:38:05.484081 [debug] [ThreadPool]: Using duckdb connection "create_f1_telemetry_main"
+[0m11:38:05.484213 [debug] [ThreadPool]: On create_f1_telemetry_main: COMMIT
+[0m11:38:05.484408 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m11:38:05.484560 [debug] [ThreadPool]: On create_f1_telemetry_main: Close
+[0m11:38:05.485004 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_f1_telemetry_main, now list_f1_telemetry_main)
+[0m11:38:05.487359 [debug] [ThreadPool]: Using duckdb connection "list_f1_telemetry_main"
+[0m11:38:05.487528 [debug] [ThreadPool]: On list_f1_telemetry_main: BEGIN
+[0m11:38:05.487666 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:38:05.487896 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m11:38:05.488047 [debug] [ThreadPool]: Using duckdb connection "list_f1_telemetry_main"
+[0m11:38:05.488206 [debug] [ThreadPool]: On list_f1_telemetry_main: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "f1_telemetry", "target_name": "dev", "connection_name": "list_f1_telemetry_main"} */
+select
+      'f1_telemetry' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'f1_telemetry'
+  
+[0m11:38:05.494436 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m11:38:05.495004 [debug] [ThreadPool]: On list_f1_telemetry_main: ROLLBACK
+[0m11:38:05.495573 [debug] [ThreadPool]: Failed to rollback 'list_f1_telemetry_main'
+[0m11:38:05.495734 [debug] [ThreadPool]: On list_f1_telemetry_main: Close
+[0m11:38:05.496052 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8f5a9952-d527-4073-9a5d-9e314b6e6b81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c8b0a0>]}
+[0m11:38:05.496259 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:38:05.496407 [debug] [MainThread]: On master: BEGIN
+[0m11:38:05.496543 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:38:05.496819 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m11:38:05.497027 [debug] [MainThread]: On master: COMMIT
+[0m11:38:05.497198 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:38:05.497353 [debug] [MainThread]: On master: COMMIT
+[0m11:38:05.497580 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m11:38:05.497747 [debug] [MainThread]: On master: Close
+[0m11:38:05.498786 [debug] [Thread-1 (]: Began running node model.f1_telemetry.telemetry_model
+[0m11:38:05.499045 [info ] [Thread-1 (]: 1 of 1 START sql view model main.telemetry_model ............................... [RUN]
+[0m11:38:05.499267 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_f1_telemetry_main, now model.f1_telemetry.telemetry_model)
+[0m11:38:05.499451 [debug] [Thread-1 (]: Began compiling node model.f1_telemetry.telemetry_model
+[0m11:38:05.503224 [debug] [Thread-1 (]: Writing injected SQL for node "model.f1_telemetry.telemetry_model"
+[0m11:38:05.503550 [debug] [Thread-1 (]: Began executing node model.f1_telemetry.telemetry_model
+[0m11:38:05.519479 [debug] [Thread-1 (]: Writing runtime sql for node "model.f1_telemetry.telemetry_model"
+[0m11:38:05.519938 [debug] [Thread-1 (]: Using duckdb connection "model.f1_telemetry.telemetry_model"
+[0m11:38:05.520112 [debug] [Thread-1 (]: On model.f1_telemetry.telemetry_model: BEGIN
+[0m11:38:05.520285 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:38:05.520611 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:38:05.520794 [debug] [Thread-1 (]: Using duckdb connection "model.f1_telemetry.telemetry_model"
+[0m11:38:05.520965 [debug] [Thread-1 (]: On model.f1_telemetry.telemetry_model: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "f1_telemetry", "target_name": "dev", "node_id": "model.f1_telemetry.telemetry_model"} */
+
+  
+  create view "f1_telemetry"."main"."telemetry_model__dbt_tmp" as (
+    SELECT
+  driver_number,
+  AVG(duration_sector_1 + duration_sector_2 + duration_sector_3) AS avg_lap_time
+FROM "f1_telemetry"."main"."laps"
+GROUP BY driver_number
+ORDER BY avg_lap_time ASC
+  );
+
+[0m11:38:05.521346 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:38:05.524524 [debug] [Thread-1 (]: Using duckdb connection "model.f1_telemetry.telemetry_model"
+[0m11:38:05.524729 [debug] [Thread-1 (]: On model.f1_telemetry.telemetry_model: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "f1_telemetry", "target_name": "dev", "node_id": "model.f1_telemetry.telemetry_model"} */
+alter view "f1_telemetry"."main"."telemetry_model__dbt_tmp" rename to "telemetry_model"
+[0m11:38:05.525288 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:38:05.529574 [debug] [Thread-1 (]: On model.f1_telemetry.telemetry_model: COMMIT
+[0m11:38:05.529760 [debug] [Thread-1 (]: Using duckdb connection "model.f1_telemetry.telemetry_model"
+[0m11:38:05.529927 [debug] [Thread-1 (]: On model.f1_telemetry.telemetry_model: COMMIT
+[0m11:38:05.530420 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:38:05.532851 [debug] [Thread-1 (]: Using duckdb connection "model.f1_telemetry.telemetry_model"
+[0m11:38:05.533040 [debug] [Thread-1 (]: On model.f1_telemetry.telemetry_model: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "f1_telemetry", "target_name": "dev", "node_id": "model.f1_telemetry.telemetry_model"} */
+
+      drop view if exists "f1_telemetry"."main"."telemetry_model__dbt_backup" cascade
+    
+[0m11:38:05.533309 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:38:05.534395 [debug] [Thread-1 (]: On model.f1_telemetry.telemetry_model: Close
+[0m11:38:05.535336 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8f5a9952-d527-4073-9a5d-9e314b6e6b81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10609bcd0>]}
+[0m11:38:05.535621 [info ] [Thread-1 (]: 1 of 1 OK created sql view model main.telemetry_model .......................... [[32mOK[0m in 0.04s]
+[0m11:38:05.535897 [debug] [Thread-1 (]: Finished running node model.f1_telemetry.telemetry_model
+[0m11:38:05.536396 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:38:05.536590 [debug] [MainThread]: On master: BEGIN
+[0m11:38:05.536738 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:38:05.536988 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m11:38:05.537152 [debug] [MainThread]: On master: COMMIT
+[0m11:38:05.537294 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:38:05.537444 [debug] [MainThread]: On master: COMMIT
+[0m11:38:05.537650 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m11:38:05.537813 [debug] [MainThread]: On master: Close
+[0m11:38:05.537990 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:38:05.538123 [debug] [MainThread]: Connection 'model.f1_telemetry.telemetry_model' was properly closed.
+[0m11:38:05.538352 [info ] [MainThread]: 
+[0m11:38:05.538610 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.11 seconds (0.11s).
+[0m11:38:05.538964 [debug] [MainThread]: Command end result
+[0m11:38:05.551398 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/devanshu/Desktop/f1-telemetry-project/dbt_project/target/manifest.json
+[0m11:38:05.552187 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/devanshu/Desktop/f1-telemetry-project/dbt_project/target/semantic_manifest.json
+[0m11:38:05.555493 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/devanshu/Desktop/f1-telemetry-project/dbt_project/target/run_results.json
+[0m11:38:05.555693 [info ] [MainThread]: 
+[0m11:38:05.555915 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:38:05.556084 [info ] [MainThread]: 
+[0m11:38:05.556328 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m11:38:05.557419 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.65775263, "process_in_blocks": "0", "process_kernel_time": 0.143852, "process_mem_max_rss": "147374080", "process_out_blocks": "0", "process_user_time": 1.063643}
+[0m11:38:05.557638 [debug] [MainThread]: Command `dbt run` succeeded at 11:38:05.557601 after 0.66 seconds
+[0m11:38:05.557822 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104426710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102e24250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104733130>]}
+[0m11:38:05.558004 [debug] [MainThread]: Flushing usage events
+[0m11:38:06.725275 [debug] [MainThread]: An error was encountered while trying to flush usage events

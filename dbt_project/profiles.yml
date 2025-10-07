@@ -1,0 +1,6 @@
+f1_telemetry:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: 'f1_telemetry.duckdb'

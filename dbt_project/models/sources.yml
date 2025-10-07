@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: f1
+    database: f1_telemetry
+    schema: main
+    tables:
+      - name: laps

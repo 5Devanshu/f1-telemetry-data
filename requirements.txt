@@ -1,0 +1,9 @@
+prefect
+boto3
+minio
+requests
+dbt-core
+dbt-duckdb
+dask[dataframe]
+s3fs
+pyarrow
