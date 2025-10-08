@@ -1,1 +1,0 @@
-{"_invocation_id": "8f5a9952-d527-4073-9a5d-9e314b6e6b81", "linked": {"0": {"name": "source.f1_telemetry.f1.laps", "type": "source", "succ": [1]}, "1": {"name": "model.f1_telemetry.telemetry_model", "type": "model"}}}
