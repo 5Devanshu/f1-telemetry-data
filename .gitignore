@@ -26,3 +26,6 @@ yarn-error.*
 *.tfstate
 *.tfstate.*
 .terraform.lock.hcl
+
+# F1 Telemetry Data
+*.json
